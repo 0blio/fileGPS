@@ -32,6 +32,10 @@ fileGPS is a tool the help you to guess
 * Python
 * Requests library
 
+### Documentation and examples
+Please, refer to the <link alla wiki>.
+Video tutorial: <link al video>
+
 ### Contribute to the project
 Do you want to help? Here's some ways you can do it:
 

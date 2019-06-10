@@ -29,6 +29,7 @@ Some of the techniques used by fileGPS are:
 * So many more
 
 ![demo](https://i.ibb.co/SwDkS7r/file-GPSscreen.png)
+![demo](https://i.ibb.co/M25Wk87/Schermata-del-2019-06-10-20-43-28.png)
 
 ### Features
 * Easy to use

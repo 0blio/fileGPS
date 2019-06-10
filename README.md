@@ -19,14 +19,14 @@
 ### Introduction
 When you upload a file on a web-server using a file uploading functionality, usually the file get renamed in various ways in order to prevent direct access to the file, RCE and file overwrite.
 
-fileGPS is a tool that implements many ways to guess the renamed filename and so find your original file.
+fileGPS is a tool that uses various techniques to find the new filename, after the server-side script renamed it.
 
 Some of the techniques used by fileGPS are:
 
-* Filename hashing in various ways
-* Remote timestamp up to 5 minutes before the start of the script
-* Filename + local timestamp up to 5 minutes before the start of the script
-* Many more
+* Various hash of the filename
+* Various timestamps tricks
+* Filename + PHP time() up to 5 minutes before the start of the script
+* So many more
 
 ![demo](https://i.ibb.co/SwDkS7r/file-GPSscreen.png)
 

@@ -33,8 +33,8 @@ fileGPS is a tool the help you to guess
 * Requests library
 
 ### Documentation and examples
-Please, refer to the <link alla wiki>.
-Video tutorial: <link al video>
+Please, refer to the LINK_ALLA_WIKI.
+Video tutorial: LINK_AL_VIDEO
 
 ### Contribute to the project
 Do you want to help? Here's some ways you can do it:

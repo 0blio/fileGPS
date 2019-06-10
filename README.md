@@ -16,8 +16,6 @@
   <img src="https://img.shields.io/badge/God-Not%20found-red.svg">
 </p>
 
-![demo](https://i.ibb.co/SwDkS7r/file-GPSscreen.png)
-
 ### Introduction
 When you upload a file on a web-server using a file uploading functionality, usually the file get renamed in various ways in order to prevent direct access to the file, RCE and file overwrite.
 
@@ -29,6 +27,8 @@ Some of the techniques used by fileGPS are:
 * Remote timestamp up to 5 minutes before the start of the script
 * Filename + local timestamp up to 5 minutes before the start of the script
 * Many more
+
+![demo](https://i.ibb.co/SwDkS7r/file-GPSscreen.png)
 
 ### Features
 * Easy to use

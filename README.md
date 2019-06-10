@@ -44,6 +44,12 @@ Do you want to help? Here's some ways you can do it:
 * Write a module
 * Report a bug
 
+### Contacts
+Email: michele.cisternino@protonmail.com
+
 ### Special thanks
 Special thanks to Panfilo Salutari for sharing with me ideas about the project.
+
+### Save an hacker from starvation by making a donation
+[![Foo](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.me/0blio)
 

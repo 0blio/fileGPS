@@ -19,7 +19,13 @@
 ![demo](https://i.ibb.co/SwDkS7r/file-GPSscreen.png)
 
 ### Introduction
-fileGPS is a tool the help you to guess 
+When you upload a file on a web-server using a file uploading functionality, usually the file get renamed in various ways in order to prevent direct file access, RCE and file overwrite.
+
+fileGPS is a tool that implements many ways to guess the renamed filename and so find your original file.
+
+Some of the techniques used by fileGPS are:
+
+*
 
 ### Features
 * Easy to use

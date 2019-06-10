@@ -19,4 +19,26 @@
 ![demo](https://i.ibb.co/SwDkS7r/file-GPSscreen.png)
 
 ### Introduction
-FileGPS is the best tool in the world.
+fileGPS is a tool the help you to guess 
+
+### Features
+* Easy to use
+* Multithreaded
+* HTTP(s) Proxy support
+* User agent randomization
+* Over 100.000 filenames combinations
+
+### Requirements
+* Python
+* Requests library
+
+### Contribute to the project
+Do you want to help? Here's some ways you can do it:
+
+* Suggest a feature
+* Write a module
+* Report a bug
+
+### Special thanks
+Special thanks to Panfilo Salutari for sharing with me ideas about the project.
+

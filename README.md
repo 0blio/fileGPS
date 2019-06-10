@@ -7,3 +7,10 @@
 </h1>
 
 <h4 align="center">HTTP filename upload guesser</h4>
+
+<p align="center">
+  <a href="https://github.com/0blio/gileGPS/releases">
+    <img src="https://img.shields.io/badge/Release-v0.1-blue.svg">
+  </a>
+  <img src="https://img.shields.io/badge/god%20level-shit-green.svg">
+</p>

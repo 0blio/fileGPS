@@ -25,7 +25,10 @@ fileGPS is a tool that implements many ways to guess the renamed filename and so
 
 Some of the techniques used by fileGPS are:
 
-*
+* Filename hashing in various ways
+* Remote timestamp up to 5 minutes before the start of the script
+* Filename + local timestamp up to 5 minutes before the start of the script
+* Many more
 
 ### Features
 * Easy to use

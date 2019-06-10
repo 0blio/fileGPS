@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://github.com/0blio/gileGPS/releases">
-    <img src="https://img.shields.io/badge/Release-v0.1-blue.svg">
+    <img src="https://img.shields.io/badge/Release-v0.2-blue.svg">
   </a>
   <img src="https://img.shields.io/badge/Licence-GPL3-brightgreen.svg">
   <img src="https://img.shields.io/badge/God-Not%20found-red.svg">

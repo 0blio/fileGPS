@@ -39,7 +39,7 @@ Some of the techniques used by fileGPS are:
 
 ### Requirements
 * Python
-* Requests library
+* Python requests library
 
 ### Documentation and examples
 Please, refer to the LINK_ALLA_WIKI.

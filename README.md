@@ -42,7 +42,7 @@ Some of the techniques used by fileGPS are:
 * Python requests library
 
 ### How to write a module
-Write a module is fairly simple and allows you to implement your custom ways of generating filename combinations.
+Writing a module is fairly simple and allows you to implement your custom ways of generating filename combinations.
 
 Below is a template for your modules:
 ```

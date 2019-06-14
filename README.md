@@ -41,10 +41,33 @@ Some of the techniques used by fileGPS are:
 * Python
 * Python requests library
 
-### Documentation and examples
-Please, refer to the LINK_ALLA_WIKI.
+### How to write a module
+Write a module is fairly simple and allows you to implement your custom ways of generating filename combinations.
 
-Video tutorial: LINK_AL_VIDEO
+Below is a template for your modules:
+```
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+  Module name: test
+  Coded by: Your name / nickname
+  Version: X.X
+  
+  Description:
+    This module destroy the world.
+"""
+output = []
+
+# Do some computations here
+
+output = ["filename1.php", "filename2.asp", "filename3.jar"]
+```
+
+The variables `url` and `filename` are automatically imported from the core script, so you can call them in your module.
+
+Once you finished to write your module, you have to save it in `Modules/`, and it will be automatically imported once the main script is started.
+
 
 ### Contribute to the project
 Do you want to help? Here's some ways you can do it:

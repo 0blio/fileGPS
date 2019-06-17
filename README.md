@@ -68,6 +68,8 @@ The variables `url` and `filename` are automatically imported from the core scri
 
 Once you finished to write your module, you have to save it in `Modules/`, and it will be automatically imported once the main script is started.
 
+You can use the module [shame](https://github.com/0blio/fileGPS/blob/master/Modules/shame.py) as a template for your modules.
+
 
 ### Contribute to the project
 Do you want to help? Here's some ways you can do it:

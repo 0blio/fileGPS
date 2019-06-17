@@ -17,7 +17,7 @@
 </p>
 
 ### Introduction
-When you upload a file on a web-server using a file upload functionality, usually the file get renamed in various ways in order to prevent direct access to the file, RCE and file overwrite.
+When you upload a shell on a web-server using a file upload functionality, usually the file get renamed in various ways in order to prevent direct access to the file, RCE and file overwrite.
 
 fileGPS is a tool that uses various techniques to find the new filename, after the server-side script renamed and saved it.
 

@@ -5,7 +5,7 @@ import argparse
 import sys
 import requests
 import os
-from multiprocessing import Pool, Queue, Manager
+from multiprocessing import Pool, Queue
 from Helpers.graphic import *
 from Helpers.connections import *
 from Helpers.utilities import *
@@ -210,6 +210,7 @@ if len(filenames) > 0:
 
 				i += 1
 			except KeyboardInterrupt:
+				notification ("Stopped", "removed")
 				break
 
 		p.terminate()

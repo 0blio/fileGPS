@@ -45,7 +45,7 @@ filename_formats = [fname, string_to_md5(fname), string_to_sha1(fname), string_t
 for timestamp in timestamps:
 
     # Take timestamp of N mins before now
-    timestamp_minus_n_mins = now - datetime.timedelta(minutes = mins)
+    timestamp_minus_n_mins = timestamp - datetime.timedelta(minutes = mins)
 
     # Timestamp taken at the start of the script
     tmp_timestamp = timestamp

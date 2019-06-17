@@ -1,0 +1,5 @@
+upload/
+uploads/
+images/
+upload/images/
+uploads/images/

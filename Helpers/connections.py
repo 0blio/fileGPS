@@ -86,7 +86,7 @@ def requester (base_url, filenames, cookie, user_agent="", proxy=""):
                 sys.stdout.write("\033[F")
                 sys.stdout.write("\033[K")
 
-            req = requests.head(url, timeout=5, cookies=cookie, headers={"User-Agent": user_agent}, proxies=proxy_dict, verify=False)
+            req = requests.head(url, cookies=cookie, headers={"User-Agent": user_agent}, proxies=proxy_dict, verify=False)
 
             if req.status_code == 200:
                 notification ("FileGPS found your file! It is here: \033[4m%s\033[0m" % url, "found")
@@ -107,7 +107,7 @@ def requester3 (target, cookie, user_agent, proxy, filename):
         if proxy != "":
             proxy_dict = {"http": proxy, "https": proxy}
 
-        req = requests.head(url, timeout=5, cookies=cookie, headers={"User-Agent": user_agent}, proxies=proxy_dict, verify=False)
+        req = requests.head(url, cookies=cookie, headers={"User-Agent": user_agent}, proxies=proxy_dict, verify=False)
 
         requester3.q.put ([url, req.status_code])
     except KeyboardInterrupt:

@@ -28,7 +28,7 @@ Some of the techniques used by fileGPS are:
 * Filename + PHP time() up to 5 minutes before the start of the script
 * So many more
 
-![screen](https://i.ibb.co/jrtCm0Y/file-GPSscreen.png)
+![screen](https://i.ibb.co/jrtCm0Y/file-GPSscreen.png | width=100)
 
 ### Features
 * Easy to use

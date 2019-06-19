@@ -35,7 +35,7 @@ required.add_argument ("--file", metavar=("FILENAME"), help="Filename of the fil
 
 # Setting up arguments in the "optional" group
 optional.add_argument ("--modules", metavar=("MODULES"), help="Comma separated list of the modules to be imported (Use '*' to import all modules)", default="*")
-optional.add_argument ("--proxy", metavar=("PROXY"), help="Use a proxy to connect to the target URL (Not implemented yet)")
+optional.add_argument ("--proxy", metavar=("PROXY"), help="Use a proxy to connect to the target URL")
 optional.add_argument ("--custom", metavar=("WORDS"), help="Comma separated list of the custom words to be used to find the file")
 optional.add_argument ("--cookie", metavar=("COOKIE"), help="HTTP Cookie header value")
 optional.add_argument ("--threads", metavar=("THREADS"), help="Max number of concurrent HTTP(s) requests (default: 1, max: 10)", type=int, choices=range(1,11,1), default=1)

@@ -37,6 +37,8 @@ Some of the techniques used by fileGPS are:
 * User agent randomization
 * Over 100.000 filenames combinations
 
+![filegps1](https://user-images.githubusercontent.com/33893182/59773891-b16a2880-92ae-11e9-9140-487aadbbfb47.PNG)
+
 ### Requirements
 * Python
 * Python requests library

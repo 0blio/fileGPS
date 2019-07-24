@@ -47,7 +47,7 @@ Some of the techniques used by fileGPS are:
 Writing a module is fairly simple and allows you to implement your custom ways of generating filename combinations.
 
 Below is a template for your modules:
-```
+```python
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 

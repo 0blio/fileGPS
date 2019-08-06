@@ -39,9 +39,16 @@ Some of the techniques used by fileGPS are:
 
 ![filegps1](https://user-images.githubusercontent.com/33893182/59773891-b16a2880-92ae-11e9-9140-487aadbbfb47.PNG)
 
-### Requirements
-* Python
-* Python requests library
+### Installation
+On BlackArch Linux:
+```bash
+pacman -S filegps
+```
+
+On other distros:
+```bash
+git clone https://github.com/0blio/filegps
+```
 
 ### How to write a module
 Writing a module is fairly simple and allows you to implement your custom ways of generating filename combinations.

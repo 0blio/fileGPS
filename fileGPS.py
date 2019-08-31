@@ -165,7 +165,20 @@ if len(filenames) > 0:
 
 	print
 
-	# Rimuovere duplicati per evitare conflitti tra moduli
+	while 1:
+		try:
+			proceed = raw_input ("[\033[1m\033[94m?\033[0m] Do you want to test %s filename against %s [y/n]? " % (str(len(filenames)), url)).lower().replace(" ", "")
+			if proceed == 'y':
+				break
+			elif proceed == 'n':
+				notification ("Stopped", "removed")
+				exit()
+		except KeyboardInterrupt:
+			print
+			notification ("Stopped", "removed")
+			exit()
+
+	print
 
 	if threads == 1:
 		notification ("Testing all %s generated filenames with 1 thread.." % str(len(filenames)), "info")

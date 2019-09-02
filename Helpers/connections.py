@@ -92,6 +92,8 @@ def requester (base_url, filenames, cookie, user_agent="", proxy=""):
                 notification ("FileGPS found your file! It is here: \033[4m%s\033[0m" % url, "found")
                 return
 
+        sys.stdout.write("\033[F")
+        sys.stdout.write("\033[K")
         notification ("File not found..", "error")
 
     except KeyboardInterrupt:

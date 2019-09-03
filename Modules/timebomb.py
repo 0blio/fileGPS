@@ -33,7 +33,7 @@ now_remote = get_remote_timestamp (base_url)
 timestamps = [now]
 
 # N mins to check before the timestamp
-mins = 5
+mins = 2
 
 # If difference in minutes between local and remote timestamp is greater than mins add the remote timestamp to computation
 if minutes_between_timestamps(now, now_remote) >= mins:

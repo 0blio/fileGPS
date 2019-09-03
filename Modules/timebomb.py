@@ -4,7 +4,7 @@
 """
     Module name: timebomb
     Coded by: Michele '0blio' Cisternino
-    Version: 0.2
+    Version: 0.3
 
     Description:
 

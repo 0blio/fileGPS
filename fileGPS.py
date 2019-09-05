@@ -46,7 +46,7 @@ optional.add_argument ("-h", "--help", help="Show help message and exit")
 
 # Setting up the list of available modules
 modules.add_argument ("shame", action="store_true", help="Generates basic filenames")
-modules.add_argument ("timebomb", action="store_true", help="Generates various combinations of timestamps and filenames iterating up to 5 minutes before the start of the script")
+modules.add_argument ("timebomb", action="store_true", help="Generates various combinations of timestamps and filenames iterating up to 2 minutes before the start of the script")
 
 # Setting up the list of examples
 examples.add_argument ("fileGPS -u http://target.com/upload/images --file shell.php", action="store_true")

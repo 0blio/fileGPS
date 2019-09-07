@@ -40,7 +40,7 @@ if minutes_between_timestamps(now, now_remote) >= mins:
     timestamps.insert(0, now_remote)
 
 # Declaring the possibile filename formats
-filename_formats = [fname, string_to_md5(fname), string_to_sha1(fname), string_to_sha256(fname)]
+filename_formats = [fname, fname + fext, string_to_md5(fname), string_to_sha1(fname), string_to_sha256(fname)]
 
 for timestamp in timestamps:
 

@@ -40,6 +40,11 @@ Some of the techniques used by fileGPS are:
 ![filegps1](https://user-images.githubusercontent.com/33893182/59773891-b16a2880-92ae-11e9-9140-487aadbbfb47.PNG)
 
 ### Installation
+On ParrotOS:
+```bash
+sudo apt install filegps
+```
+
 On BlackArch Linux:
 ```bash
 pacman -S filegps

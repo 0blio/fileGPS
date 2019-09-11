@@ -25,7 +25,7 @@ Some of the techniques used by fileGPS are:
 
 * Various hash of the filename
 * Various timestamps tricks
-* Filename + PHP time() up to 5 minutes before the start of the script
+* Filename + PHP time() up to N minutes before the start of the script
 * So many more
 
 ![screenz](https://user-images.githubusercontent.com/33893182/59773713-62bc8e80-92ae-11e9-8fe2-2c65434dbbf1.PNG)

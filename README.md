@@ -28,7 +28,7 @@ Some of the techniques used by fileGPS are:
 * Filename + PHP time() up to 5 minutes before the start of the script
 * So many more
 
-![screenz](https://user-images.githubusercontent.com/33893182/59773713-62bc8e80-92ae-11e9-8fe2-2c65434dbbf1.PNG)
+![screen1](https://user-images.githubusercontent.com/33893182/64913627-026da980-d744-11e9-939f-df8383302c1e.png)
 
 ### Features
 * Easy to use
@@ -37,7 +37,7 @@ Some of the techniques used by fileGPS are:
 * User agent randomization
 * Over 100.000 filenames combinations
 
-![filegps1](https://user-images.githubusercontent.com/33893182/59773891-b16a2880-92ae-11e9-9140-487aadbbfb47.PNG)
+![screen2](https://user-images.githubusercontent.com/33893182/64913630-0bf71180-d744-11e9-8ddd-7b0008cee356.png)
 
 ### Installation
 On ParrotOS:

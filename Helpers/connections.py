@@ -4,6 +4,7 @@
 import os
 import sys
 import requests
+from Cookie import SimpleCookie
 from random import choice
 from urlparse import urlparse
 from datetime import datetime
@@ -72,9 +73,19 @@ def requester (target, cookie, user_agent, proxy, match, filename):
         url = target + filename
 
         proxy_dict = {}
+        cookie_dict = {}
 
         if proxy != "":
             proxy_dict = {"http": proxy, "https": proxy}
+
+        # If the user specified a cookie convert it to a requests acceptable dict
+        if cookie != "":
+            cookie_dict = SimpleCookie()
+            cookie_dict.load(cookie)
+            cookie = {}
+
+            for key, morse1 in cookie_dict.items():
+                cookie[key] = morse1.value
 
         # If the user want to match a specific string in the response
         if match != "":

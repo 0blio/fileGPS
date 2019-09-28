@@ -64,7 +64,7 @@ def question_yn (question):
             proceed = raw_input (question + "? [y/n]: ").lower().replace(" ", "")
             if proceed in ['y', 'n', ""]:
                 return proceed
-        except KeyboardInterrupt:
+        except:
             print
             notification ("Stopped\n", "removed")
             exit()

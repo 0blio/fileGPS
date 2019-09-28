@@ -45,13 +45,14 @@ optional.add_argument ("--threads", metavar=("THREADS"), help="Max number of con
 optional.add_argument ("--user-agent", metavar=('AGENT'), help="HTTP User-Agent header value")
 optional.add_argument ("--match", metavar=('STRING'), help="Text pattern to match in the response (e.g. webshell)")
 optional.add_argument ("--random-agent", action="store_true", help="Use randomly selected HTTP User-Agent header value")
-optional.add_argument ("-o", metavar=("FILENAME"), help="Save all generated filenames in a file")
+optional.add_argument ("-o", "--output", metavar=("FILENAME"), help="Save all generated filenames in a file")
 optional.add_argument ("-v", "--verbose", action="store_true", help="Verbose mode")
 optional.add_argument ("-h", "--help", help="Show help message and exit")
 
 # Setting up the list of available modules
 modules.add_argument ("shame", action="store_true", help="Generates a list of hashed filenames. If the user doesn't specify a specific path to search the file in, it appends the generated values to a list of common upload directories.")
 modules.add_argument ("timebomb", action="store_true", help="Generates various combinations of timestamps and filenames iterating up to 1 minute before the start of the script.")
+modules.add_argument ("monkey", action="store_true", help="Generates various combinations of timestamps and random numbers.")
 
 # If there aren't arguments passed to the program  or user requested an help print the help message and exit
 if len(sys.argv[1:]) == 0 or len(sys.argv[1:]) == 1 and sys.argv[1] in ["-h", "--help"]:
@@ -70,7 +71,7 @@ modules = args.modules.replace(" ", "")
 custom_words = args.custom.replace(" ", "").split(",") if args.custom else []
 session_cookie = args.cookie if args.cookie else ""
 proxy = args.proxy if args.proxy else ""
-file_output = args.o if args.o else ""
+file_output = args.output if args.output else ""
 threads = args.threads
 match = args.match if args.match else ""
 user_agent = args.user_agent if args.user_agent else ""
@@ -90,8 +91,6 @@ elif args.user_agent == "" or not args.user_agent or not random_agent:
 		notification ("Selected user agent: %s" % (user_agent), "success")
 	except:
 		notification ("Error reading the user agents file.", "error")
-
-
 
 print
 
@@ -121,6 +120,8 @@ if modules == "*":
         if m.endswith (".py"):
             modules.append(m)
 
+	# TODO: Sort modules by relevance
+
 # Else if the user specified the modules to import
 else:
     argument_values = modules.split (",")
@@ -138,7 +139,7 @@ else:
         if os.path.isfile ("Modules/" + argument):
             modules.append(argument)
         else:
-			notification ("Module '%s' not found\n" % argument.strip(".py"), "error")
+			notification ("Module '%s' not found\n" % argument.replace(".py", ""), "error")
 
     del argument_values
 
@@ -152,17 +153,17 @@ else:
 # Executing valid modules
 filenames = []
 for module in modules:
-    notification ("Running module '%s' .." % module.strip(".py"), "notify")
+    notification ("Running module '%s' .." % module.replace(".py", ""), "notify")
     execfile ("Modules/" + module)
 
     # Checking if the module generated an output (allocated list of filenames to search for)
     if 'output' in locals():
-        notification ("'%s' generated \033[1m%s\033[0m possible filenames.\n" % (module.strip(".py"), str(len(output))), "success")
+        notification ("'%s' generated \033[1m%s\033[0m possible filenames.\n" % (module.replace(".py", ""), str(len(output))), "success")
         filenames += output
         del output
 
     else:
-        notification ("Invalid module: '%s'" % module.strip(".py"), "error")
+        notification ("Invalid module: '%s'" % module.replace(".py", ""), "error")
 
 # If the modules generated some filenames
 if len(filenames) > 0:
@@ -171,6 +172,10 @@ if len(filenames) > 0:
 		notification ("Writing the generated filenames to '%s'" % file_output, "info")
 
 		try:
+			# If the file already exists raise an exception
+			if os.path.isfile(file_output) and question_yn ("[\033[1m\033[94m?\033[0m] %s already exists! Do you want to override it" % (file_output)) == 'n':
+				raise Exception ('test')
+
 			with open (file_output, "w") as fp:
 				for filename in filenames:
 					fp.write("%s\n" % filename)
@@ -208,7 +213,7 @@ if len(filenames) > 0:
 	while 1:
 		try:
 			if i == len_filenames:
-				notification ("File not found. Have you an idea on how to find it? Ask for a feature on https://github.com/0blio/filegps.\n", "error")
+				notification ("File not found. Have you an idea on how to find it? Ask for a feature on \033[94m\033[4mhttps://github.com/0blio/filegps\033[0m.\n", "error")
 				break
 
 			# Getting a result from the shared memory

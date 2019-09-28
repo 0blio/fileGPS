@@ -25,8 +25,8 @@ fname, fext = os.path.splitext(filename)
 verbose_message (notification ("Hashing '%s' in various ways.." % (filename), "added", False), verbose)
 filename_formats = [fname, string_to_md5(fname), string_to_sha1(fname)]
 
-# Default: generate random numbers by using an incremental value (from 1 to 5)
-# TODO: Dare all'utente la possibilità di modificare il numero di valori
+# Default: generate random numbers by using an incremental value (from 1 to 4)
+# TODO: User input to set len_number
 
 # Generate all the possible numbers with incremental cardinality (from 1 to len_number)
 numbers = []

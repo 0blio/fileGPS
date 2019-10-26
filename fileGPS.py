@@ -52,7 +52,7 @@ optional.add_argument ("-h", "--help", help="Show help message and exit")
 # Setting up the list of available modules
 modules.add_argument ("shame", action="store_true", help="Generates a list of hashed filenames. If the user doesn't specify a specific path to search the file in, it appends the generated values to a list of common upload directories.")
 modules.add_argument ("timebomb", action="store_true", help="Generates various combinations of timestamps and filenames iterating up to 1 minute before the start of the script.")
-modules.add_argument ("monkey", action="store_true", help="Generates various combinations of timestamps and random numbers.")
+modules.add_argument ("monkey", action="store_true", help="Generates various combinations of filenames, sequential numbers and custom words.")
 
 # If there aren't arguments passed to the program  or user requested an help print the help message and exit
 if len(sys.argv[1:]) == 0 or len(sys.argv[1:]) == 1 and sys.argv[1] in ["-h", "--help"]:

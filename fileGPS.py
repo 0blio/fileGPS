@@ -120,7 +120,13 @@ if modules == "*":
         if m.endswith (".py"):
             modules.append(m)
 
-	# TODO: Sort modules by relevance
+    # Sort modules by relevance
+    tmp = []
+    for r in ["shame.py", "timebomb.py", "monkey.py"]:
+        if r in modules:
+            tmp.append(r)
+    modules = tmp
+    del tmp
 
 # Else if the user specified the modules to import
 else:
@@ -184,6 +190,8 @@ if len(filenames) > 0:
 			notification ("File written successfully!\n", "success")
 		except:
 			notification ("Error writing the file!\n", "error")
+        else:
+                verbose_message(notification("No output file specified. Proceeding without saving filenames..\n", "added", False), verbose)
 
 	# Asking to the user if he wants to proceed with the test
 	if question_yn ("[\033[1m\033[94m?\033[0m] Do you want to test %s filenames on %s" % (str(len(filenames)), url)) == 'n':

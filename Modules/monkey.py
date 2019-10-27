@@ -8,13 +8,13 @@
 
     Description:
 
-        This module generate a list of combinations by using random numbers generation.
+        This module generate a list of combinations by using sequential numbers.
 """
 
 import itertools
 
 output = []
-len_number = 4
+len_number = 3
 
 incremental = True
 
@@ -25,7 +25,7 @@ fname, fext = os.path.splitext(filename)
 verbose_message (notification ("Hashing '%s' in various ways.." % (filename), "added", False), verbose)
 filename_formats = [fname, string_to_md5(fname), string_to_sha1(fname)]
 
-# Default: generate random numbers by using an incremental value (from 1 to 4)
+# Default: generate random numbers by using an incremental value (from 1 to 3)
 # TODO: User input to set len_number
 
 # Generate all the possible numbers with incremental cardinality (from 1 to len_number)

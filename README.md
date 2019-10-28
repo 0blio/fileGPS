@@ -32,6 +32,7 @@ Some of the techniques used by fileGPS are:
 
 ### Features
 * Easy to use
+* Modular
 * Multithreaded
 * HTTP(s) Proxy support
 * User agent randomization

@@ -151,7 +151,7 @@ else:
 
 # Checking if there some modules
 if len(modules) == 0:
-	notification ("No modules found. Quitting..", "error")
+	notification ("No modules found. Quitting..\n", "error")
 	exit()
 else:
 	notification ("Running all %s valid modules." % str(len(modules)), "info")
@@ -169,7 +169,7 @@ for module in modules:
         del output
 
     else:
-        notification ("Invalid module: '%s'" % module.replace(".py", ""), "error")
+        notification ("Invalid module: '%s'\n" % module.replace(".py", ""), "error")
 
 # If the modules generated some filenames
 if len(filenames) > 0:

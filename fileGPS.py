@@ -125,7 +125,7 @@ if modules == "*":
     for r in ["shame.py", "timebomb.py", "monkey.py"]:
         if r in modules:
             tmp.append(r)
-    modules = tmp
+    modules = tmp + [x for x in modules if x not in ['shame.py', 'timebomb.py', 'monkey.py']]
     del tmp
 
 # Else if the user specified the modules to import

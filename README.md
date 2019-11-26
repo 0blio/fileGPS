@@ -102,5 +102,5 @@ Special thanks to Panfilo Salutari for sharing with me ideas about the project.
 Thanks to Claudio Sala for the logo.
 
 ### Save an hacker from starvation by making a donation
-[![Foo](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.me/0blio)
+[![Foo](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://paypal.me/obli0)
 

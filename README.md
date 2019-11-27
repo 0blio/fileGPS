@@ -97,8 +97,6 @@ Do you want to help? Here's some ways you can do it:
 Email: michele.cisternino@protonmail.com
 
 ### Special thanks
-Special thanks to Panfilo Salutari for sharing with me ideas about the project.
-
 Thanks to Claudio Sala for the logo.
 
 ### Save an hacker from starvation by making a donation

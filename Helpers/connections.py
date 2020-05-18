@@ -32,7 +32,7 @@ def check_target_connection (target, user_agent):
     target = get_base_hostname (target)
 
     try:
-        requests.head(target, timeout=5, headers={"User-Agent": user_agent}).status_code
+        requests.head(target, timeout=5, verify=False, headers={"User-Agent": user_agent}).status_code
         return True
     except:
         return False

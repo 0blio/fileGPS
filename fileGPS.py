@@ -11,6 +11,10 @@ from Helpers.connections import *
 from Helpers.utilities import *
 from functools import partial
 import Helpers
+import urllib3
+
+# Disable SSL Warnings
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # Don't write .pyc files
 sys.dont_write_bytecode = True

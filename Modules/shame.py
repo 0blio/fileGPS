@@ -15,13 +15,9 @@
 output = []
 common_dirs = []
 
-# If the user didn't specified any directory read a wordlist of common upload directories
-if url == base_url + "/":
-    verbose_message (notification ("No directory specified, reading a list of common upload directories..", "added", False), verbose)
-    common_dirs = open("txt/common-directories.txt", "r").read().splitlines()
-    verbose_message (notification ("%s directories read!" % (str(len(common_dirs))), "added", False), verbose)
-else:
-    verbose_message (notification ("Specified directory: %s. Skipping the reading of common upload directories." % url.replace(base_url, ""), "added", False), verbose)
+verbose_message (notification ("Reading a list of common upload directories..", "added", False), verbose)
+common_dirs = open("txt/common-directories.txt", "r").read().splitlines()
+verbose_message (notification ("%s directories read!" % (str(len(common_dirs))), "added", False), verbose)
 
 # Taking the name and the ext of the file the user uploaded
 fname, fext = os.path.splitext(filename)

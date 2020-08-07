@@ -32,7 +32,10 @@ verbose_message (notification ("Local datetime: %s" % (now), "added", False), ve
 # Taking the remote system timestamp
 verbose_message (notification ("Reading target datetime..", "added", False), verbose)
 now_remote = get_remote_timestamp (base_url)
-verbose_message (notification ("Target datetime: %s" % (now_remote), "added", False), verbose)
+if now_remote == False:
+    verbose_message (notification ("Unable to read target datetime. Only the local datetime will be used.", "error", False), verbose)
+else:
+    verbose_message (notification ("Target datetime: %s" % (now_remote), "added", False), verbose)
 
 timestamps = [now]
 

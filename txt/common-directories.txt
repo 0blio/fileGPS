@@ -1,3 +1,4 @@
+files/
 aduploads_in/
 aduploads_out/
 advhtml_upload/

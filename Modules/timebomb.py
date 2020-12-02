@@ -43,7 +43,7 @@ timestamps = [now]
 mins = 1
 
 # If difference in minutes between local and remote timestamp is greater than mins add the remote timestamp to computation
-if minutes_between_timestamps(now, now_remote) >= mins:
+if now_remote == True and minutes_between_timestamps(now, now_remote) >= mins:
     timestamps.insert(0, now_remote)
 
 # Declaring the possibile filename formats
